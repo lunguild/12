@@ -1,0 +1,122 @@
+koroluz<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo3000x3000.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>𝐆𝐚𝐦𝐞™</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">𝐆𝐚𝐦𝐞™</a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+        <i class='bx bx-x' id="close"></i>
+
+      </label>
+
+      <nav class="navbar">
+        <a href="index.html" style="--i:0;">𝐇𝐨𝐦𝐞</a>
+        <a href="game.html" style="--i:1;">𝐆𝐚𝐦𝐞</a>
+        <a href="rule.html" style="--i:2;">𝐑𝐮𝐥𝐞</a>
+        <a href="team.html" style="--i:3;">𝐓𝐞𝐚𝐦</a>
+        <a href="login.html" style="--i:4;">𝐋𝐨𝐠𝐢𝐧</a>
+
+      </nav>
+
+    </header>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.button-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+.button-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: conic-gradient(#009bff, #36ff00, #ff4600, #009bff, #36ff00, #ff4600, #009bff, #36ff00, #ff4600, #009bff, #36ff00, #ff4600);
+    animation: rotateAnimation 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+.button-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 1.9px solid black;
+    background-color: #2e98f0;
+    transform: translate(-50%, -50%);
+}
+
+.download-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: black;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
+    transform: translate(-50%, -50%);
+}
+
+.download-button:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+@keyframes rotateAnimation {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+</style>
+</head>
+<body>
+<header>
+<h1>𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐌𝐲 𝐖𝐞𝐛𝐬𝐢𝐭𝐞</h1>
+</header>
+
+<div class="button-container">
+<div class="button-border"></div>
+<div class="button-animation"></div>
+<a href="apk/koroluz.apk" class="download-button">𝐌𝐲 𝐀𝐩𝐤</a>
+</div>
+
+
+  </body>
+</html>

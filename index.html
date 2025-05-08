@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koroluz</title>
+    <link rel="icon" href="img/logo3000x3000.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+      @keyframes icon-bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes text-color {
+        0% { color: white; }
+        100% { color: black; }
+      }
+      @keyframes logo-animation {
+        0% { transform: scale(1) rotate(0deg); }
+        50% { transform: scale(1.1) rotate(10deg); }
+        100% { transform: scale(1) rotate(0deg); }
+      }
+      .hero-text {
+        font-size: 1.5rem;
+        width: 38%;
+        animation: text-color 1s infinite alternate;
+        background: black;
+        backdrop-filter: blur(50px);
+        border-radius: 20px;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        font-size: 1.8rem;
+        color: white;
+        text-decoration: none;
+        border-radius: 50%;
+        transition: 0.3s;
+        animation: icon-bounce 1.5s infinite;
+      }
+      .youtube {
+        background: blue;
+      }
+      .telegram {
+        background: #0088cc;
+      }
+      .btn:hover {
+        opacity: 0.8;
+      }
+      .hero-logo {
+        width: 120px;
+        height: auto;
+        animation: logo-animation 3s infinite ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">koroluz</a>
+
+      <input type="checkbox" id="check">
+      <label for="check" class="icons">
+        <i class='bx bx-menu-alt-right' id="menu"></i>
+        <i class='bx bx-x' id="close"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="index.html" style="--i:0;">𝐇𝐨𝐦𝐞</a>
+        <a href="game.html" style="--i:1;">𝐆𝐚𝐦𝐞</a>
+        <a href="rule.html" style="--i:2;">𝐑𝐮𝐥𝐞</a>
+        <a href="team.html" style="--i:3;">𝐓𝐞𝐚𝐦</a>
+        <a href="login.html" style="--i:4;">𝐋𝐨𝐠𝐢𝐧</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img src="img/logo3000x3000.png" alt="Logo" class="hero-logo">
+      <p class="hero-text">koroluz 𝐉𝐚𝐦𝐨𝐚𝐬𝐢 𝐒𝐞𝐫𝐯𝐞𝐫𝐢𝐠𝐚 𝐇𝐮𝐬𝐡 𝐊𝐞𝐥𝐢𝐛𝐬𝐢𝐳❗</p>
+      <div class="hero-buttons">
+        <a href="https://youtube.com/@koroluz" class="btn youtube"><i class='bx bxl-youtube'></i></a>
+        <a href="https://t.me/koroluz" class="btn telegram"><i class='bx bxl-telegram'></i></a>
+      </div>
+    </section>
+  </body>
+</html>
